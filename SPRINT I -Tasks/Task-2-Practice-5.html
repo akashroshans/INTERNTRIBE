@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Inline Layout</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .box {
+      display: inline-block;
+      background: #888;
+      color: white;
+      padding: 10px;
+      margin: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      vertical-align: top;
+    }
+    .page-title {
+      width: 30%;
+      background: #444;
+    }
+    .nav {
+      width: 65%;
+      background: #666;
+    }
+    .intro {
+      width: 100%;
+      background: #555;
+    }
+    .main {
+      width: 48%;
+      height: 150px;
+      background: #222;
+    }
+    .sidebar {
+      width: 48%;
+      height: 150px;
+      background: #aaa;
+    }
+    .footer {
+      width: 100%;
+      background: #777;
+    }
+    @media screen and (max-width: 768px) {
+      .box {
+        display: block;
+        width: 100% !important;
+        margin: 5px auto;
+      }
+      .main, .sidebar {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box page-title">Page title</div>
+    <div class="box nav">Navigation</div>
+    <div class="box intro">Introduction</div>
+    <div class="box main">Main content area</div>
+    <div class="box sidebar">Sidebar</div>
+    <div class="box footer">Footer</div>
+  </div>
+
+</body>
+</html>
