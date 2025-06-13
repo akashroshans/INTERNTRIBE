@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container{
+            max-width: 600px;
+            display: grid;
+            margin: auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 3fr 1fr 4fr 4fr 1fr;
+            background-color: gray;
+        }
+        .container>div{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: xx-large;
+            color: white;
+        }
+        #head{
+            grid-column: 1/4;
+            background-color: black;
+        }
+        #nav{
+            grid-column: 1/4;
+            background-color: darkgray;
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+        }
+        #slide{
+            grid-column: 1/4;
+            background-color: rgb(80, 78, 78);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .empty1{
+            grid-column: 1/2;
+            background-color: white;
+            margin: 20px;
+        }
+        .empty2{
+            grid-column: 2/3;
+            background-color: white;
+            margin: 20px;
+        }
+        .empty3{
+            grid-column: 3/4;
+            background-color: white;
+            margin: 20px;
+        }
+        #foot{
+            background-color: rgb(81, 79, 79);
+            grid-column: 1/4;
+            border-top: 5px solid white;
+        }
+    </style>
+    <div class="container">
+        <div id="head">Header</div>
+        <div id="nav">Navigation Bar</div>
+        <div id="slide">Slideshow</div>
+        <div class="empty1"></div>
+        <div class="empty2"></div>
+        <div class="empty3"></div>
+        <div id="foot">Footer</div>
+    </div>
+</body>
+</html>
