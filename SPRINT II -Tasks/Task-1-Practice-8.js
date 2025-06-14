@@ -1,0 +1,11 @@
+let a=5;
+let b=8;
+console.log(`a = ${a} and b = ${b}`);
+a=a+b;
+b=a-b;
+a=a-b;
+console.log(`a = ${a} and b = ${b}`);
+c=a;
+a=b;
+b=c;
+console.log(`a = ${a} and b = ${b}`);
