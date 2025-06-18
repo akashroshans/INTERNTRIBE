@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .root{
+            height: 100vh;
+            width: 70vh;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            margin: auto;
+        }
+        .head{
+            height: 10%;
+            background-color: #53D3ED;
+        }
+        .content{
+            height: 60%;
+            display: flex;
+        }
+        .relate{
+            height: 20%;
+            display: flex;
+        }
+        .foot{
+            height: 10%;
+            background-color: blue;
+        }
+        .hero{
+            height: 40%;
+            background-color: #D8C8E3;
+        }
+        .side{
+            height: 60%;
+            background-color: #9FC065;
+        }
+        .left{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+        .main{
+            height: 70%;
+            background-color: #F6C632;
+        }
+        .extra{
+            height: 30%;
+            background-color: #888888;
+        }
+        .images{
+            width: 70%;
+            background-color: #2BB675;
+        }
+        .post{
+            width: 30%;
+            background-color: #F4CBDD;
+        }
+        .foot{
+            background-color: #FEA301;
+        }
+        .head,.hero,.side,.main,.extra,.images,.post,.foot{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2px;
+            font-size: smaller;
+        }
+    </style>
+    <div class="root">
+        <div class="head">Header</div>
+        <div class="content">
+            <div class="left">
+                <div class="hero">Hero</div>
+                <div class="side">Sidebar</div>
+            </div>
+            <div class="right">
+                <div class="main">Main content</div>
+                <div class="extra">Extra Content</div>
+            </div>
+        </div>
+        <div class="relate">
+            <div class="images">Related Images</div>
+            <div class="post">Related Posts</div>
+        </div>
+        <div class="foot">Footer</div>
+    </div>
+</body>
+</html>
