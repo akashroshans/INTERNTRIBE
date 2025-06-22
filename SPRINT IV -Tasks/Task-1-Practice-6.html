@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button ondblclick="DoubleClicked()">Click Here</button><br>
+    <h2 id="htag"></h2>
+    <script>
+        const htag=document.getElementById('htag');
+        function DoubleClicked(){
+            htag.innerHTML='Button was double-clicked!';
+            console.log(htag.innerHTML);
+        }
+    </script>
+</body>
+</html>

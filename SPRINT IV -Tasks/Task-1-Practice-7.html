@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmouseenter="mEnter()" onmouseleave="mLeave()" style="background-color: aqua; height: 100px; width: 100px;"></div>
+    <h2 id="htag"></h2>
+    <script>
+        const htag=document.getElementById('htag');
+        function mEnter(){
+            htag.innerHTML='Mouse Entered!';
+        }
+        function mLeave(){
+            htag.innerHTML='Mouse Left!';
+        }
+    </script>
+</body>
+</html>
