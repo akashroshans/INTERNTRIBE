@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Select Gender</h3>
+    <input type="radio" id="male" name="gen" value="Male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gen" value="Female">
+    <label for="female">Female</label><br>
+
+    <h3>Select Favourite Language</h3>
+    <input type="checkbox" id="l1" name="lang" value="Python">
+    <label for="l1"> Python</label><br>
+    <input type="checkbox" id="l2" name="lang" value="Java">
+    <label for="l2"> Java</label><br>
+    <input type="checkbox" id="l3" name="lang" value="C++">
+    <label for="l3"> C++</label><br>
+
+    <button onclick="Clicked()">Submit</button>
+    <p id="ptag"></p>
+
+    <script>
+        function Clicked() {
+            const radios = document.getElementsByName('gen');
+            const checkboxes = document.getElementsByName('lang');
+            let selectedGender = '';
+            let selectedLanguages = [];
+            for (let r of radios) {
+                if (r.checked) {
+                    selectedGender = r.value;
+                }
+            }
+            for (let c of checkboxes) {
+                if (c.checked) {
+                    selectedLanguages.push(c.value);
+                }
+            }
+            const result = `Selected Gender: ${selectedGender}<br>Favourite Languages: ${selectedLanguages.join(', ')}`;
+            document.getElementById('ptag').innerHTML = result;
+        }
+    </script>
+</body>
+
+</html>
