@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+
+}
+
+.container1 {
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    height: 10%;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    font-size: large;
+}
+
+header ul li:hover {
+    color: #1E3932;
+}
+
+header input {
+    margin: 10px 20px;
+    width: 250px;
+    height: 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.main {
+    height: 10%;
+    background-color: #1E3932;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+
+}
+
+.main button {
+    background-color: #1E3932;
+    color: white;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    border: 1px solid white;
+}
+
+.box3 {
+    background-color: #1E3932;
+    height: 30vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 20px 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.20);
+}
+
+.box3 div {
+    padding: 20px 50px;
+    color: white;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.box3 button {
+    height: 50px;
+    width: 200px;
+    margin-top: 150px;
+    background-color: #00754A;
+    border: none;
+    font-size: large;
+    color: white;
+    border-radius: 10px;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 100px;
+}
+
+.food h2 {
+    padding: 50px 50px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.items>div>img {
+    border-radius: 50%;
+}
+
+.items>div>img:hover {
+    border: 2px solid #1E3932;
+}
+
+.items>div>p {
+    font-size: large;
+    text-align: center;
+}
+
+.container2 {
+    height: 100vh;
+    width: 100vw;
+}
+
+.first {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #EDEBE9;
+    justify-content: space-evenly;
+    padding-left: 150px;
+}
+
+.buy {
+    height: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.up {
+    display: flex;
+    gap: 10px;
+}
+
+.up div {
+    padding-top: 10px;
+}
+
+.up img {
+    border-radius: 10%;
+}
+
+.down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.down button {
+    height: 40px;
+    width: 100px;
+    background-color: #00754A;
+    border: none;
+    font-size: large;
+    color: white;
+    border-radius: 10px;
+}
+
+.second {
+    background-color: #EDEBE9;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 120px;
+    margin-top: 5vh;
+    justify-content: space-evenly;
+}
+
+.second>div {
+    background: url('assets/main.jpg');
+    height: 80%;
+    width: 90%;
+    background-size: cover;
+    background-position: 0% 50%;
+    color: white;
+    padding: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.second div button {
+    color: black;
+    background-color: white;
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+}
+
+.container3 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1E3932;
+    color: white;
+}
+
+.d1 {
+    height: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.d1>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 40px;
+    gap: 20px;
+}
+
+.d2 {
+    display: flex;
+    padding-left: 100px;
+    gap: 50px;
+    height: 30%;
+    align-items: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+.d3 {
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid white;
+    align-items: center;
+}
