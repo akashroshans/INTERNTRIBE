@@ -1,0 +1,237 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    background-color: #fff;
+    color: #1e3932;
+  }
+  
+  /* Header styling */
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    padding: 0 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  header ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 16px;
+  }
+  
+  header ul li {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  header ul li:hover {
+    color: #00754a;
+  }
+  
+  header input {
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  /* Main banner */
+  .main {
+    background-color: #1e3932;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+  }
+  
+  .main button {
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Promo box */
+  .box3 {
+    background-color: #1e3932;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    padding: 30px;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .box3 div {
+    padding-left: 40px;
+  }
+  
+  .box3 button {
+    background-color: #00754a;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Food categories */
+  .food {
+    padding: 50px 100px;
+  }
+  
+  .food h2 {
+    margin-bottom: 30px;
+  }
+  
+  .items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .items > div {
+    text-align: center;
+  }
+  
+  .items img {
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  .items img:hover {
+    border: 2px solid #1e3932;
+  }
+  
+  .items p {
+    margin-top: 10px;
+    font-weight: 500;
+  }
+  
+  /* Container2 sections */
+  .container2 {
+    background-color: #edebe9;
+    padding: 60px 100px;
+  }
+  
+  .first {
+    margin-bottom: 40px;
+  }
+  
+  .buy {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+  }
+  
+  .up {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .down button {
+    background-color: #00754a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .second div {
+    background-image: url('assets/main.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 20px;
+  }
+  
+  .second button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Footer section */
+  .container3 {
+    background-color: #1e3932;
+    color: white;
+    padding: 60px 40px 20px;
+  }
+  
+  .d1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+  
+  .d1 div {
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .d2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .right img,
+  .left img {
+    margin-right: 10px;
+  }
+  
+  .d3 {
+    border-top: 1px solid white;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  footer {
+    margin-bottom: 10px;
+  }
+  
